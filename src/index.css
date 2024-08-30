@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color:#0aad0a;;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+
+
+
+.main-color,.active {
+  color: var(--main-color);
+}
+
+input:focus {
+  background-color: #fff;
+  border-color: #85d685;
+  box-shadow: 0 0 0 .25rem rgba(10, 173, 10, .25);
+  color: #21313c;
+  outline: 0;
+}
+
+.nav-icon li:hover {
+  color: var(--main-color);
+}
+
+.bg-img {
+  background-image: url(../src/assets/images/f3898ae2b4b18c8426416d0df4838cf2.jpg);
+}
+
+.row-tw {
+  @apply flex flex-wrap px-4
+}
+
+.product {
+  border: 1px solid #eee;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product:hover {
+  border-color: var(--main-color);
+
+}
+
+.btn {
+  transition: all 1s cubic-bezier(.28, .12, .22, 1);
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 5px 15px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.active-nav{
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+.custom-border{
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.btn-details {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn-details:hover {
+  background-color: #258b25;
+}
+.fav-details{
+height: 2rem;
+width: 2rem;
+border-radius: 5px;
+background-color: #eee;
+display: flex;
+justify-content:center ;
+align-items: center;
+padding: 20px;
+cursor: pointer;
+}
+
+.brand{
+  transition: 0.4s all;
+  border:1px solid #eee;
+  border-radius: 10px;
+}
+.brand:hover{
+  box-shadow: 3px 4px 25px -3px rgba(10,173,10,0.75);
+}
+
